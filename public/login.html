@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <style>
+        #loginform{
+            width: 40%;
+            margin: 50px auto 50px auto;
+            padding: 50px;
+            border: 10px solid black;
+            border-radius:10px;
+        }
+        #loginform .inputElements{
+            display: block;
+            text-align: center;
+            margin: 4px auto;
+        }
+        .msg {
+            text-align:center;
+            color:red
+        }
+        h4 {
+            text-align:center;
+        }
+
+        body{
+            background-color:dimgray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form id="loginform" method="post" action="/login" enctype="multipart/form-data"><!--Der er to input til brugernavn og password, action fortæller at der skal sendes inhold til routen /login-->
+                <h4>Login påkrævet</h4>
+                
+                
+                <!--msg-->
+                <input class="inputElements" type="text" name="username" placeholder="Brugernavn" autofocus value="nat">
+                <input class="inputElements" type="password" name="password" placeholder="Kodeord" value="admin">
+                <button class="inputElements" type="submit">Login</button>
+        </form>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
